@@ -1,4 +1,4 @@
-# [sv](https://svelte.dev/docs/cli/overview) community add-on: [tmp](https://github.com/tmp)
+# [sv](https://svelte.dev/docs/cli/overview) community add-on: [threlte](https://threlte.xyz)
 
 > [!IMPORTANT]
 > Svelte maintainers have not reviewed community add-ons for malicious code. Use at your discretion
@@ -8,22 +8,33 @@
 To install the add-on, run:
 
 ```shell
-npx sv add tmp
+npx sv add threlte
 ```
 
-## What you get [TO BE FILLED...]
+## What you get
 
-- A super cool stuff
-- Another one!
+- `@threlte/core` - The core 3D rendering framework
+- Optional packages: extras, rapier, theatre, xr, flex, studio, gltf, uikit
+- Optional demo page with a 3D rotating cube
 
-## Options [TO BE FILLED...]
+## Options
 
-### `who`
+### `demo`
 
-The name of the person to say hello to.
+Include a demo page with a 3D rotating cube.
 
-Default: `you`
+Default: `false`
 
 ```shell
-npx sv add tmp="who:your-name"
+npx sv add threlte="demo:false"
+```
+
+### `packages`
+
+Which Threlte packages to install. Use multiple times to select multiple packages.
+
+Default: `extras`
+
+```shell
+npx sv add threlte="packages:extras,rapier,theatre"
 ```
